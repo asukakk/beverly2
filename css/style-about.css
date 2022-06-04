@@ -1,0 +1,674 @@
+@charset "UTF-8";
+/* デザインC(PC) */
+
+/* ===========================
+            共通
+=========================== */
+body {
+	margin: 0;
+	padding: 0;
+	color: #444444;
+	background-color: #f3f3f3;
+}
+
+/* ===========================
+            ヘッダー
+=========================== */
+
+/* ハンバーガーメニュー非表示 */
+.globalMenuSp {
+	visibility: hidden;
+	height: 0;
+ }
+ /* ======================= */
+header {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    justify-content: space-around;
+	background-color: #ffffff;
+	
+}
+
+.container {
+	width: 1120px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	/* border: double 2px; 後で削除 */
+}
+
+.logo-oya {
+	margin-top: 15px;
+}
+
+.logo-oya img {
+     text-align: center;
+}
+
+.nav-oya {
+	width: 720px;
+	/* background-color: yellowgreen; 後で削除 */
+}
+
+
+.nav ul {
+	width: 660px;
+	display: flex;
+	justify-content: space-between;
+	height:105px;
+	line-height: 105px;
+	/* background-color: #999; 後で削除 */
+}
+
+.nav ul li {
+	list-style: none;
+	color: 444444;
+}
+
+.nav li a {
+	/* font-weight: bold;
+	color: #444444; */
+	display: block;
+    position: relative;
+    height: 105px;
+    line-height: 105px; 
+    color: #444444;
+    padding: 0 15px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* ========hover=========== */
+.nav li:hover {
+	background-color: #444444;
+	color: #ffffff;
+}
+
+.nav li a:hover {
+	color: #ffffff;
+}
+/* ========hover=========== */
+
+/* ==========================
+       TOP
+============================= */
+.brand_main {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.wrap {
+	width: 100%;
+	margin: 100px auto 0 auto;
+	/* background-color: #f3f3f3; */
+}
+
+ul {
+	padding: 0;
+	margin: 0 30px;
+	list-style: none;
+}
+ul li img {
+	max-width: 100%;
+	height: auto;
+}
+.slick-prev::before, .slick-next::before {
+	color: #333;
+}
+ 
+
+/* ==========================
+       ブランド展開
+============================= */
+.contents-oya {
+	width: 100%;
+	background-color: #f3f3f3;
+	padding-top: 130px;
+    padding-bottom: 50px;
+}
+
+.brand_detail {
+	width: 800px;
+	margin: 30px auto;
+}
+
+.brand_ttl {
+	width: 590px;
+	margin: 0 auto;
+    text-align: left;
+}
+
+.brand_ttl a {
+	color: #444444;
+	border-bottom: solid 1px;
+}
+
+.brand_ttl h2 {
+	text-align: center;
+	font-size: 28px;
+	padding-bottom: 10px;
+}
+
+
+/* ==========================
+         フッター
+============================= */
+footer {
+	width: 100%;
+	margin: 0 auto;
+	/* background-color: #CCCCCC; */
+	/* border: solid 1px; */
+}
+
+.ft-logo {
+	text-align: center;
+	padding: 5px 0 20px 0;
+}
+
+.ft-logo img {
+	width: 100px;
+}
+
+.ft-nav-oya {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #CCCCCC;
+}
+
+.ft-nav, .ft-nav2 {
+    width: 100%;
+	margin: 0 auto;
+	background-color: #CCCCCC;
+}
+
+/* ==========================
+         フッターリスト
+============================= */
+.list {
+	font-weight: bold;
+}
+
+.list a {
+	font-size: 18px;
+	color: #444444;
+	color: #000000;
+}
+
+.ft-nav ul {
+	height: 120px;
+	line-height: 130px;
+	text-align: center;
+	background-color: #CCCCCC; 
+	margin: 0 auto;
+}
+
+.ft-nav2 ul{
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	background-color: #CCCCCC; 
+	margin: 0 auto;
+}
+
+.ft-nav ul li, .ft-nav2 ul li {
+	display: inline;
+	margin-right: 20px;
+	color: #444444;
+	font-size: small;
+	list-style: none;
+}
+
+.border {
+	padding-left:20px;
+	border-left:1px solid #999;
+}
+
+a {
+	text-decoration: none;
+}
+
+.ft-contact {
+    display: block;
+    position: relative;
+    width: 210px;
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    border: #000000 1px solid;
+    border-radius: 30px;
+    margin: 0 auto;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.ft-contact a {
+	color: #444444;
+	color: #000000;
+
+}
+
+/* ========================= */
+.sns {
+	width: 100%;
+	margin: 0 auto;
+	/* padding-top: 15px; */
+	background-color: #CCCCCC; 
+	text-align: center;
+}
+/* ========================= */
+.Copyright {
+    width: 100%;
+	margin: 0 auto;
+	padding: 10px 0;
+	background-color: #CCCCCC;
+	text-align: center;
+}
+
+small {
+    color: #444444;
+	font-size: xx-small;
+}
+
+
+  /* ===========================
+           タブレット
+=========================== */
+  @media screen and (min-width:600px) and (max-width:960px){
+/* ===========================
+            ヘッダー
+=========================== */
+header {
+	width: 100%;
+}
+
+.container-oya {
+	width: 100%;
+}
+
+.container {
+	width: 100%;
+}
+
+.nav-oya {
+	width: 100%;
+}
+
+.nav {
+	width: 100%;
+}
+
+
+
+/*　ハンバーガーボタン　*/
+.hamburger {
+   display : block;
+   /* position: fixed;
+   position: relative; */
+   z-index : 3;
+   /* right : 13px; */
+   left: 380px;
+   top   : 12px;
+   /* top: 95px; */
+   width : 42px;
+   height: 42px;
+   cursor: pointer;
+   text-align: center;
+ }
+ .hamburger span {
+   display : block;
+   position: absolute;
+   width   : 30px;
+   height  : 2px ;
+   left    : 6px;
+   background : #555;
+   -webkit-transition: 0.3s ease-in-out;
+   -moz-transition   : 0.3s ease-in-out;
+   transition        : 0.3s ease-in-out;
+ }
+ .hamburger span:nth-child(1) {
+   top: 10px;
+ }
+ .hamburger span:nth-child(2) {
+   top: 20px;
+ }
+ .hamburger span:nth-child(3) {
+   top: 30px;
+ }
+ 
+ /* ナビ開いてる時のボタン */
+ .hamburger.active span:nth-child(1) {
+   top : 16px;
+   left: 6px;
+   -webkit-transform: rotate(-45deg);
+   -moz-transform   : rotate(-45deg);
+   transform        : rotate(-45deg);
+ }
+ 
+ .hamburger.active span:nth-child(2),
+ .hamburger.active span:nth-child(3) {
+   top: 16px;
+   -webkit-transform: rotate(45deg);
+   -moz-transform   : rotate(45deg);
+   transform        : rotate(45deg);
+ }
+ 
+.globalMenuSp {
+   visibility: visible;
+   height: 174px;
+}
+ nav.globalMenuSp {
+   position: fixed;
+   z-index : 2;
+   top: 10px;
+   left : 0;
+   color: #000;
+   /* background: #fff; */
+   text-align: center;
+   transform: translateX(100%);
+   transition: all 0.6s;
+   width: 100%;
+ }
+ 
+ nav.globalMenuSp ul {
+   background: #ccc;
+   /* margin: 0 auto; */
+   margin: 90px auto 0 auto;
+   padding: 0;
+   width: 100%;
+ }
+ 
+ nav.globalMenuSp ul li {
+   list-style-type: none;
+   padding: 0;
+   width: 100%;
+   border-top: 1px solid #fff;
+ }
+ /* nav.globalMenuSp ul li:last-child {
+   padding-bottom: 0;
+   border-bottom: none;
+ } */
+ nav.globalMenuSp ul li:hover{
+   background :#ddd;
+ }
+ 
+ nav.globalMenuSp ul li a {
+   display: block;
+   color: #444444;
+   padding: 1em 0;
+   text-decoration :none;
+ }
+ 
+ /* このクラスを、jQueryで付与・削除する */
+ nav.globalMenuSp.active {
+   transform: translateX(0%);
+
+ }
+
+  .nav {
+    display: none;
+ }
+
+ .logo-oya {
+	margin-left: 60px;
+ }
+
+ /* ==========================
+       ブランド展開
+============================= */
+.brand_detail {
+	width: 80%;
+}
+
+.brand_ttl {
+	width: 80%;
+}
+
+/* ==========================
+         フッター
+============================= */
+.ft-logo img {
+	width: 100px;
+}
+
+.ft-logo {
+    padding: 20px 0 ;
+}
+
+.ft-nav-oya {
+	width: 100%;
+}
+
+.ft-nav, .ft-nav2 {
+    width: 100%;
+}
+
+.ft-nav ul {
+	width: 100%;
+    height: 30px;
+    line-height: 30px;
+	padding-top: 20px;
+}
+
+.ft-nav2 ul {
+	width: 100%;
+	height: 30px;
+    line-height: 30px;
+}
+
+.ft-contact {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* ========================= */
+.Copyright {
+    width: 100%;	
+}
+
+}
+
+  @media screen and (max-width: 600px) {
+/* ===========================
+            スマホ
+=========================== */
+/* ===========================
+            ヘッダー
+=========================== */
+.header {
+	width: 100%;
+}
+
+/* ========hover=========== */
+
+.container {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	height: 110px;
+}
+
+.nav-oya {
+	width: 100%;
+}
+
+.logo-oya img {
+    margin-top: 30px;
+}
+
+/*　ハンバーガーボタン　*/
+.hamburger {
+	display : block;
+	/* position: fixed;
+	position: relative; */
+	z-index : 3;
+	/* right : 13px; */
+	left: 380px;
+	top   : 12px;
+	/* top: 95px; */
+	width : 42px;
+	height: 42px;
+	cursor: pointer;
+	text-align: center;
+  }
+  .hamburger span {
+	display : block;
+	position: absolute;
+	width   : 30px;
+	height  : 2px ;
+	left    : 6px;
+	background : #555;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition   : 0.3s ease-in-out;
+	transition        : 0.3s ease-in-out;
+  }
+  .hamburger span:nth-child(1) {
+	top: 10px;
+  }
+  .hamburger span:nth-child(2) {
+	top: 20px;
+  }
+  .hamburger span:nth-child(3) {
+	top: 30px;
+  }
+  
+  /* ナビ開いてる時のボタン */
+  .hamburger.active span:nth-child(1) {
+	top : 16px;
+	left: 6px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform   : rotate(-45deg);
+	transform        : rotate(-45deg);
+  }
+  
+  .hamburger.active span:nth-child(2),
+  .hamburger.active span:nth-child(3) {
+	top: 16px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform   : rotate(45deg);
+	transform        : rotate(45deg);
+  }
+  
+ .globalMenuSp {
+	visibility: visible;
+	height: 174px;
+ }
+  nav.globalMenuSp {
+	position: fixed;
+	z-index : 2;
+	top: 20px;
+	left : 0;
+	color: #000;
+	/* background: #fff; */
+	text-align: center;
+	transform: translateX(100%);
+	transition: all 0.6s;
+	width: 100%;
+  }
+  
+  nav.globalMenuSp ul {
+	background: #ccc;
+	/* margin: 0 auto; */
+	margin: 90px auto 0 auto;
+	padding: 0;
+	width: 100%;
+  }
+  
+  nav.globalMenuSp ul li {
+	list-style-type: none;
+	padding: 0;
+	width: 100%;
+	border-top: 1px solid #fff;
+  }
+  /* nav.globalMenuSp ul li:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+  } */
+  nav.globalMenuSp ul li:hover{
+	background :#ddd;
+  }
+  
+  nav.globalMenuSp ul li a {
+	display: block;
+	color: #444444;
+	padding: 1em 0;
+	text-decoration :none;
+  }
+  
+  /* このクラスを、jQueryで付与・削除する */
+  nav.globalMenuSp.active {
+	transform: translateX(0%);
+ 
+  }
+ 
+   .nav {
+	 display: none;
+  }
+
+  .contents-oya {
+    padding-top: 5px;
+}
+
+
+ /* ==========================
+       ブランド展開
+============================= */
+.brand_detail {
+	width: 80%;
+}
+
+.brand_ttl {
+	width: 80%;
+}
+
+/* ==========================
+         フッター
+============================= */
+.ft-logo img {
+	width: 20%;
+}
+
+.ft-logo {
+    padding: 20px 0;
+}
+
+ .ft-nav ul {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    padding-top: 20px;
+	padding-bottom: 10px;
+} 
+
+.ft-nav2 ul {
+	/* margin-left: 20px; */
+	height: 30px;
+    line-height: 30px;
+	padding: 0;
+}
+
+.ft-contact {
+	margin-top: 50px;
+	margin-bottom: 20px;
+} 
+
+.list a {
+    font-size: 14px;
+}
+
+.ft-nav2 ul li {
+	margin-right: 20px;
+}
+
+} 
+
+

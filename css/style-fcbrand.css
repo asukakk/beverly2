@@ -1,0 +1,732 @@
+@charset "UTF-8";
+/* デザインC(PC) */
+
+/* ===========================
+            共通
+=========================== */
+body {
+	margin: 0;
+	padding: 0;
+	color: #444444;
+	color: #000000;
+}
+
+p {
+	font-size: small;
+}
+/* ===========================
+            ヘッダー
+=========================== */
+
+/* ハンバーガーメニュー非表示 */
+.globalMenuSp {
+	visibility: hidden;
+	height: 0;
+ }
+ /* ======================= */
+header {
+	width: 1120px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	/* background-color: aliceblue; 後で削除する */
+}
+
+.container {
+	width: 1120px;
+	height: 105px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	/* border: double 2px; 後で削除する */
+}
+
+.logo-oya {
+	margin-top: 15px;
+}
+
+.logo-oya img {
+	text-align: center;
+	margin-top: -8px;
+}
+
+.nav-oya {
+	width: 720px;
+	/* background-color: yellowgreen; 後で削除する */
+}
+
+.nav ul {
+	width: 660px;
+	display: flex;
+	justify-content: space-between;
+	height: 105px;
+	line-height: 105px;
+	/* background-color: #999; 後で削除する */
+}
+
+.nav ul li {
+	list-style: none;
+	color: 444444;
+	color: #000000;
+	margin-top: -20px;
+    height: 110px;
+}
+
+.nav li a {
+	/* font-weight: bold;
+	color: #444444; */
+	display: block;
+    position: relative;
+    height: 105px;
+    line-height: 105px;
+    color: #444444;
+    padding: 0 15px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.hamburger-oya {
+	height: 105px;
+}
+
+.logo-oya {
+	height: 105px;
+}
+
+/* ========hover=========== */
+.nav li:hover {
+	background-color: #444444;
+	color: #ffffff;
+}
+
+.nav li a:hover {
+	color: #ffffff;
+}
+/* ========hover=========== */
+
+/* ==========================
+      メインコンテンツ
+============================= */
+.contents-oya {
+	width: 100%;
+	background-color: #f3f3f3;
+	margin: 0 auto;
+	padding-bottom: 120px;
+}
+
+.main {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.mainvisual {
+	padding: 150px 0;
+	background-image: url(../img/fc_top.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.mainvisual h1 {
+	margin: 0;
+	color: #ffffff;
+}
+
+.contents {
+	text-align: center;
+}
+
+.contents h2 {
+	margin-top: 60px;
+    font-size: 30px;
+}
+
+.contents p {
+	font-size: medium;
+	line-height: 30px;
+	margin: 50px 0;
+}
+
+/* ======================= */
+/* WORKS */
+/* ======================= */
+ .box {
+	width: 880px;
+	margin: 0 auto;
+ }
+ 
+ .works-card {
+	width: 640px;
+	margin: 0 auto;
+}
+ .works-card img {
+	width: 100%;
+ }
+ 
+ .works-card h3 {
+	font-size: 16px;
+	text-align: left;
+	margin: 10px 20px 0 20px;
+}
+
+.works-card p {
+	text-align: left;
+	margin: 10px 20px 50px 20px;
+}
+
+ .works-card a {
+	text-decoration: none;
+	color: #444444;
+	color: #000000;color: #000;
+    padding-bottom: 30px;
+ }
+
+/* ==========================
+         フッター
+============================= */
+footer {
+	width: 100%;
+	margin: 0 auto;
+	/* background-color: #CCCCCC; */
+	/* border: solid 1px; */
+}
+
+.ft-logo {
+	text-align: center;
+	padding: 20px 0;
+}
+
+.ft-logo img {
+	width: 150px;
+}
+
+.ft-nav-oya {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #CCCCCC;
+}
+
+.ft-nav {
+    width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #CCCCCC;
+}
+
+/* ==========================
+         フッター
+============================= */
+footer {
+	width: 100%;
+	margin: 0 auto;
+	/* background-color: #CCCCCC; */
+	/* border: solid 1px; */
+}
+
+.ft-logo {
+	text-align: center;
+	padding: 5px 0 20px 0;
+}
+
+.ft-logo img {
+	width: 100px;
+}
+
+.ft-nav-oya {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #CCCCCC;
+}
+
+.ft-nav, .ft-nav2 {
+    width: 100%;
+	margin: 0 auto;
+	background-color: #CCCCCC;
+}
+
+/* ==========================
+         フッターリスト
+============================= */
+.list {
+	font-weight: bold;
+}
+
+.list a {
+	font-size: 18px;
+	color: #444444;
+	color: #000000;
+}
+
+.ft-nav ul {
+	height: 120px;
+	line-height: 130px;
+	text-align: center;
+	background-color: #CCCCCC; 
+	margin: 0 auto;
+}
+
+.ft-nav2 ul{
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	background-color: #CCCCCC; 
+	margin: 0 auto;
+}
+
+.ft-nav ul li, .ft-nav2 ul li {
+	display: inline;
+	margin-right: 20px;
+	color: #444444;
+	font-size: small;
+	list-style: none;
+}
+
+.border {
+	padding-left:20px;
+	border-left:1px solid #999;
+}
+
+a {
+	text-decoration: none;
+}
+
+.ft-contact {
+    display: block;
+    position: relative;
+    width: 210px;
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    border: #000000 1px solid;
+    border-radius: 30px;
+    margin: 0 auto;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.ft-contact a {
+	color: #444444;
+	color: #000000;
+
+}
+
+/* ========================= */
+.sns {
+	width: 100%;
+	margin: 0 auto;
+	/* padding-top: 15px; */
+	background-color: #CCCCCC; 
+	text-align: center;
+}
+/* ========================= */
+.Copyright {
+    width: 100%;
+	margin: 0 auto;
+	padding: 10px 0;
+	background-color: #CCCCCC;
+	text-align: center;
+}
+
+small {
+    color: #444444;
+	font-size: xx-small;
+}
+  /* ===========================
+           タブレット
+=========================== */
+  @media screen and (min-width:600px) and (max-width:960px){
+/* ===========================
+            ヘッダー
+=========================== */
+/* ===========================
+            ヘッダー
+=========================== */
+header {
+	width: 100%;
+}
+
+.nav-oya {
+	width: 100%;
+}
+
+.nav {
+	width: 100%;
+}
+/*　ハンバーガーボタン　*/
+.hamburger {
+   display : block;
+   /* position: fixed;
+   position: relative; */
+   z-index : 3;
+   /* right : 13px; */
+   left: 380px;
+   top   : 12px;
+   /* top: 95px; */
+   width : 42px;
+   height: 42px;
+   cursor: pointer;
+   text-align: center;
+ }
+ .hamburger span {
+   display : block;
+   position: absolute;
+   width   : 30px;
+   height  : 2px ;
+   left    : 6px;
+   background : #555;
+   -webkit-transition: 0.3s ease-in-out;
+   -moz-transition   : 0.3s ease-in-out;
+   transition        : 0.3s ease-in-out;
+ }
+ .hamburger span:nth-child(1) {
+   top: 10px;
+ }
+ .hamburger span:nth-child(2) {
+   top: 20px;
+ }
+ .hamburger span:nth-child(3) {
+   top: 30px;
+ }
+ 
+ /* ナビ開いてる時のボタン */
+ .hamburger.active span:nth-child(1) {
+   top : 16px;
+   left: 6px;
+   -webkit-transform: rotate(-45deg);
+   -moz-transform   : rotate(-45deg);
+   transform        : rotate(-45deg);
+ }
+ 
+ .hamburger.active span:nth-child(2),
+ .hamburger.active span:nth-child(3) {
+   top: 16px;
+   -webkit-transform: rotate(45deg);
+   -moz-transform   : rotate(45deg);
+   transform        : rotate(45deg);
+ }
+ 
+.globalMenuSp {
+   visibility: visible;
+   height: 174px;
+}
+ nav.globalMenuSp {
+   position: fixed;
+   z-index : 2;
+   top: 15px;
+   left : 0;
+   color: #000;
+   /* background: #fff; */
+   text-align: center;
+   transform: translateX(100%);
+   transition: all 0.6s;
+   width: 100%;
+ }
+ 
+ nav.globalMenuSp ul {
+   background: #ccc;
+   /* margin: 0 auto; */
+   margin: 90px auto 0 auto;
+   padding: 0;
+   width: 100%;
+ }
+ 
+ nav.globalMenuSp ul li {
+   list-style-type: none;
+   padding: 0;
+   width: 100%;
+   border-top: 1px solid #fff;
+ }
+ /* nav.globalMenuSp ul li:last-child {
+   padding-bottom: 0;
+   border-bottom: none;
+ } */
+ nav.globalMenuSp ul li:hover{
+   background :#ddd;
+ }
+ 
+ nav.globalMenuSp ul li a {
+   display: block;
+   color: #444444;
+   padding: 1em 0;
+   text-decoration :none;
+ }
+ 
+ /* このクラスを、jQueryで付与・削除する */
+ nav.globalMenuSp.active {
+   transform: translateX(0%);
+ }
+
+  .nav {
+    display: none;
+ }
+
+ .logo-oya {
+	margin-left: 60px;
+ }
+ 
+ .logo-oya img {
+	 margin-top: -4px;
+ }
+
+ .contents-oya {
+    padding-bottom: 30px;
+}
+ /* ======================= */
+/* WORKS */
+/* ======================= */
+.box {
+	width: 100%;
+ }
+ 
+ .works-card {
+	width: 80%;
+}
+
+/* ==========================
+         フッター
+============================= */
+.ft-logo img {
+	width: 100px;
+}
+
+.ft-logo {
+    padding: 20px 0 ;
+}
+
+.ft-nav-oya {
+	width: 100%;
+}
+
+.ft-nav, .ft-nav2 {
+    width: 100%;
+}
+
+.ft-nav ul {
+	width: 100%;
+    height: 30px;
+    line-height: 30px;
+	padding-top: 20px;
+	padding-left: 0;
+    padding-right: 0;
+}
+
+.ft-nav2 ul {
+	width: 80%;
+	height: 30px;
+    line-height: 30px;
+	padding: 0;
+}
+
+.ft-contact {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* ========================= */
+.Copyright {
+    width: 100%;	
+}
+
+
+}
+
+  @media screen and (max-width: 600px) {
+/* ===========================
+            スマホ
+=========================== */
+/* ===========================
+            ヘッダー
+=========================== */
+header {
+	width: 100%;
+}
+
+/* ========hover=========== */
+.container {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-oya {
+	width: 100%;
+}
+
+/*　ハンバーガーボタン　*/
+.hamburger {
+	display : block;
+	/* position: fixed;
+	position: relative; */
+	z-index : 3;
+	/* right : 13px; */
+	left: 380px;
+	top   : 12px;
+	/* top: 95px; */
+	width : 42px;
+	height: 42px;
+	cursor: pointer;
+	text-align: center;
+  }
+  .hamburger span {
+	display : block;
+	position: absolute;
+	width   : 30px;
+	height  : 2px ;
+	left    : 6px;
+	background : #555;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition   : 0.3s ease-in-out;
+	transition        : 0.3s ease-in-out;
+  }
+  .hamburger span:nth-child(1) {
+	top: 10px;
+  }
+  .hamburger span:nth-child(2) {
+	top: 20px;
+  }
+  .hamburger span:nth-child(3) {
+	top: 30px;
+  }
+  
+  /* ナビ開いてる時のボタン */
+  .hamburger.active span:nth-child(1) {
+	top : 16px;
+	left: 6px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform   : rotate(-45deg);
+	transform        : rotate(-45deg);
+  }
+  
+  .hamburger.active span:nth-child(2),
+  .hamburger.active span:nth-child(3) {
+	top: 16px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform   : rotate(45deg);
+	transform        : rotate(45deg);
+  }
+  
+ .globalMenuSp {
+	visibility: visible;
+	height: 174px;
+ }
+  nav.globalMenuSp {
+	position: fixed;
+	z-index : 2;
+	top: 15px;
+	left : 0;
+	color: #000;
+	/* background: #fff; */
+	text-align: center;
+	transform: translateX(100%);
+	transition: all 0.6s;
+	width: 100%;
+  }
+  
+  nav.globalMenuSp ul {
+	background: #ccc;
+	/* margin: 0 auto; */
+	margin: 90px auto 0 auto;
+	padding: 0;
+	width: 100%;
+  }
+  
+  nav.globalMenuSp ul li {
+	list-style-type: none;
+	padding: 0;
+	width: 100%;
+	border-top: 1px solid #fff;
+  }
+  /* nav.globalMenuSp ul li:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+  } */
+  nav.globalMenuSp ul li:hover{
+	background :#ddd;
+  }
+  
+  nav.globalMenuSp ul li a {
+	display: block;
+	color: #444444;
+	padding: 1em 0;
+	text-decoration :none;
+  }
+  
+  /* このクラスを、jQueryで付与・削除する */
+  nav.globalMenuSp.active {
+	transform: translateX(0%);
+  }
+ 
+   .nav {
+	 display: none;
+  }
+
+  .logo-oya img {
+    margin-top: 25px;
+}
+
+.contents-oya {
+    padding-bottom: 20px;
+}
+
+.contents h2 {
+	margin-bottom: 40px;
+    font-size: 20px;
+}
+/* ======================= */
+/* WORKS */
+/* ======================= */
+.box {
+	width: 100%;
+ }
+ 
+ .works-card {
+	width: 80%;
+}
+
+/* ==========================
+         フッター
+============================= */
+.ft-logo img {
+	width: 20%;
+}
+
+.ft-logo {
+    padding: 20px 0;
+}
+
+ .ft-nav ul {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    padding-top: 20px;
+	padding-bottom: 10px;
+} 
+
+.ft-nav ul li {
+	margin-right: 40px;
+}
+.ft-nav2 ul {
+	height: 30px;
+    line-height: 30px;
+	padding: 0 0 0 9px;
+}
+
+.ft-contact {
+	margin-top: 50px;
+	margin-bottom: 20px;
+} 
+
+.list a {
+    font-size: 14px;
+}
+
+.ft-nav2 ul li {
+	margin-right: 20px;
+}
+
+} 
+
+

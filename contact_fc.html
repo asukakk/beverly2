@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>コーポレートサイト</title>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="slick/slick.min.js"></script>
+	<script src="js/extention.js"></script>
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="css/style-contact-fc.css">
+</head>
+
+	<!-- jQuery-st -->
+	<script>
+			// ハンバーガーメニュー
+			$(function() {
+		$('.hamburger').click(function() {
+			$(this).toggleClass('active');
+	
+			if ($(this).hasClass('active')) {
+				$('.globalMenuSp').addClass('active');
+			} else {
+				$('.globalMenuSp').removeClass('active');
+			}
+		});
+	});
+   	</script>   
+    <!-- jQuery-end -->
+
+
+	<!-- header-st -->
+	<header>
+		<div class="container">
+			<div class="logo-oya">
+				<div class="logo"><img src="img/logo-head.gif" alt=""></div>
+			</div>
+
+			<!-- ハンバーガメニューここから -->
+			<div class="hamburger-oya">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				
+				<nav class="globalMenuSp">
+					<ul>
+						<li><a href="index.html">ホーム</a></li>
+						<li><a href="company.html" target="_blank" rel="noopener">企業情報</a></li>
+						<li><a href="brand.html" target="_blank" rel="noopener">展開ブランド</a></li>
+						<li><a href="franchise.html" target="_blank" rel="noopener">フランチャイズ募集</a></li>
+						<li><a href="recruit.html" target="_blank" rel="noopener">採用</a></li>
+						<li><a href="contact.html" target="_blank" rel="noopener">お問い合わせ</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!-- ハンバーガメニューここまで -->
+			<div class="nav-oya">
+				<nav class="nav">
+					<ul>
+						<li><a href="index.html">ホーム</a></li>
+						<li><a href="company.html" target="_blank" rel="noopener">企業情報</a></li>
+						<li><a href="brand.html" target="_blank" rel="noopener">展開ブランド</a></li>
+						<li><a href="franchise.html" target="_blank" rel="noopener">フランチャイズ募集</a></li>
+						<li><a href="recruit.html" target="_blank" rel="noopener">採用</a></li>
+						<li><a href="contact.html" target="_blank" rel="noopener">お問い合わせ</a></li>
+					</ul>
+				</nav>
+			</div>
+	    </div>
+	</header>
+    <!-- header-end -->
+
+	<!-- contact-st -->
+	<div class="contents-oya">
+		<div class="contents">
+			<div class="main">
+				<div class="mainvisual">
+					<h1>FC加盟についてのお問い合わせ</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="box">
+			<h2>お電話でのお問い合わせはこちら</h2>
+			<div class="contact-ttl">
+				<ul>
+					<li class="tel">TEL：xxxx-xxx-xxx</li>
+					<li>受付時間：（平日）10:00〜18:00</li>
+				</ul>
+			</div>
+				<p>お電話の際は、「フランチャイズの加盟について」とお伝え願います。</p>
+			</div> 
+		</div>
+	</div>
+    <!-- contact-end -->
+
+	<div id="top">  <!-- CONTACT FORMここから --> 
+		<div class="cont">
+			<div class="form-cont">
+				<form action="#">
+					<h3 class="center">御社の企業情報をご入力ください</h3>
+					<p>
+						<label for="name" >会社名</label><br>
+						<input type="text" name="companyname" id="companyname" placeholder="会社名をご入力ください">
+					</p>
+					<p>
+						<label for="name" >会社名（カナ）</label><br>
+						<input type="text" name="companynamekana" id="companynamekana" placeholder="会社名をご入力ください">
+					</p>
+					<p>
+						<label for="name" >氏名</label><br>
+						<input type="text" name="userkana" id="userkana" placeholder="氏名をご入力ください">
+					</p>
+					<p>
+						<label for="name" >氏名（カナ）</label><br>
+						<input type="text" name="username" id="username" placeholder="氏名のフリガナをご入力ください">
+					</p>
+					<p>
+						<label for="name" >役職</label><br>
+						<input type="text" name="yakusyoku" id="yakusyoku" placeholder="役職をご入力ください">
+					</p>
+					<p>
+						<label for="name" >郵便番号</label><br>
+						<input class="postcode" name="zip1" type="text" id="zip1" size="3" maxlength="3"> - 
+						<input class="postcode" name="zip2" type="text" id="zip2" size="4" maxlength="4"> </td>
+					</p>
+					<p>
+						<label for="name" >住所</label><br>
+						<input type="text" name="address" id="address" placeholder="住所をご入力ください">
+					</p>
+					<p>
+						<label for="name" >電話番号</label><br>
+						<input type="text" name="phone" id="phone" placeholder="電話番号">
+					</p>
+					<p>
+						<label for="maialadress" >メールアドレス</label><br>
+						<input type="email" name="maialadress" id="maialadress" placeholder="メールアドレスをご入力ください">
+					</p>
+					<h3 class="center">お問い合わせ内容</h3>
+					<p>
+						<label for="freespace" ></label>
+						<textarea name="freespace" id="freespace" placeholder="お問い合わせ内容をご入力ください"></textarea>
+					</p>
+					
+					<div class="caution">
+						<h3>弊社からのご連絡について</h3>
+						<div class="kind">
+							<p>
+								<label class="label_check">
+									<input type="checkbox" name="horeply[0]" value="メールでの返信を希望する">
+									<span>メールでの返信を希望する</span></label>
+							</p>
+							<p>
+								<label class="label_check">
+									<input type="checkbox" name="horeply[1]" value="電話での連絡を希望する">
+									<span>電話での連絡を希望する</span></label>
+							</p>
+						</div>
+							<p class="privacy">
+								<input type="checkbox" name="type" value="0">プライバシーポリシーに同意する。
+							</p>
+					</div>
+					<div class="button">
+						<a href="#" class="btn">送信する</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>   <!-- CONTACT FORMここまで -->
+	
+
+
+
+
+	<!-- footer-st -->
+	<footer>
+		<div class="ft-nav-oya">
+			<div class="ft-nav">
+				<ul class="list" >
+					<li><a href="index.html">ホーム</a></li>
+					<li><a href="company.html" target="_blank" rel="noopener">企業情報</a></li>
+					<li><a href="brand.html" target="_blank" rel="noopener">展開ブランド</a></li>
+					<li><a href="franchise.html" target="_blank" rel="noopener">フランチャイズ募集</a></li>
+					<li><a href="recruit.html" target="_blank" rel="noopener">採用</a></li>
+				</ul>
+		    </div>
+			<div class="ft-nav">
+				<div class="ft-contact"><a href="contact.html" target="_blank" rel="noopener">お問い合わせ</a></div>
+		    </div>
+			<div class="ft-nav2">
+				<ul>
+					<a href="about.html" target="_blank" rel="noopener"><li>サイトのご利用について</li></a>
+					<a href="privacy policy.html" target="_blank" rel="noopener"><li class="border">プライバシーポリシー</li></a>
+				</ul>
+		    </div>
+			<div class="ft-logo">
+				<a href="#"><img src="img/foot_logo_tokukei.png" alt=""></a>
+			</div>
+			<div class="sns">
+				<a href="#" target="_blank" rel="noopener"><img src="img/fb.png" alt="" width="15"></a>
+				<a href="#" target="_blank" rel="noopener"><img src="img/tw2.png" alt="" width="15"></a>
+				<a href="#" target="_blank" rel="noopener"><img src="img/ico_inst.png" alt="" width="16"></a>
+				<a href="#" target="_blank" rel="noopener"><img src="img/line.png" alt="" width="16"></a>
+				<!-- <a href=""><img src="img/mail3.png" alt="" width="20"></a> -->
+			</div>
+		</div>
+		<div class="Copyright">
+			<small>Copyright c Tokukei. All Rights Reserved.</small>
+	    </div>
+	</footer>
+	<!-- footer-end -->
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>フィランチャイズ</title>
+	<link rel="stylesheet" href="css/style-openflow.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+
+</head>
+<body>
+	<!-- jQuery-st -->
+	<script>
+		// page-top
+		jQuery(function() {
+			var pagetop = $('#page_top');   
+			pagetop.hide();
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {  //100pxスクロールしたら表示
+					pagetop.fadeIn();
+				} else {
+					pagetop.fadeOut();
+				}
+			});
+			pagetop.click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 500); //0.5秒かけてトップへ移動
+				return false;
+			});
+		});
+
+
+
+		// ハンバーガーメニュー
+		$(function() {
+    $('.hamburger').click(function() {
+        $(this).toggleClass('active');
+ 
+        if ($(this).hasClass('active')) {
+            $('.globalMenuSp').addClass('active');
+        } else {
+            $('.globalMenuSp').removeClass('active');
+        }
+    });
+});
+   </script>   
+    <!-- jQuery-end -->
+
+
+	<!-- header-st -->
+	<header>
+		<div class="container">
+			<div class="logo-oya">
+				<div class="logo"><img src="img/logo-head.gif" alt=""></div>
+			</div>
+
+			<!-- ハンバーガメニューここから -->
+			<div class="hamburger-oya">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				
+				<nav class="globalMenuSp">
+					<ul>
+						<li><a href="index.html">ホーム</a></li>
+						<li><a href="company.html" target="_blank" rel="noopener">企業情報</a></li>
+						<li><a href="brand.html" target="_blank" rel="noopener">展開ブランド</a></li>
+						<li><a href="franchise.html" target="_blank" rel="noopener">フランチャイズ募集</a></li>
+						<li><a href="recruit.html" target="_blank" rel="noopener">採用</a></li>
+						<li><a href="contact.html" target="_blank" rel="noopener">お問い合わせ</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!-- ハンバーガメニューここまで -->
+			<div class="nav-oya">
+				<nav class="nav">
+					<ul>
+						<li><a href="index.html">ホーム</a></li>
+						<li><a href="company.html" target="_blank" rel="noopener">企業情報</a></li>
+						<li><a href="brand.html" target="_blank" rel="noopener">展開ブランド</a></li>
+						<li><a href="franchise.html" target="_blank" rel="noopener">フランチャイズ募集</a></li>
+						<li><a href="recruit.html" target="_blank" rel="noopener">採用</a></li>
+						<li><a href="contact.html" target="_blank" rel="noopener">お問い合わせ</a></li>
+					</ul>
+				</nav>
+			</div>
+	    </div>
+	</header>
+    <!-- header-end -->
+
+	<div class="contents-oya">
+		<div class="contents">
+			<div class="main">
+				<div class="mainvisual">
+					<h1>開業までの流れ</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="contents">
+			<p>加盟をご希望される場合の、お問い合わせから開業までの流れをご説明します。<br>
+				物件のご提案までに与信審査・オーナー面談を実施させて頂いております。
+			</p>
+		</div>
+		<div="box">
+			
+		</div=>
+
+	</div>
+	
+	</div>
+	<!-- footer-st -->
+	<footer>
+		<div class="ft-nav-oya">
+			<div class="ft-nav">
+				<ul class="list" >
+					<li><a href="index.html">ホーム</a></li>
+					<li><a href="company.html" target="_blank" rel="noopener">企業情報</a></li>
+					<li><a href="brand.html" target="_blank" rel="noopener">展開ブランド</a></li>
+					<li><a href="franchise.html" target="_blank" rel="noopener">フランチャイズ募集</a></li>
+					<li><a href="recruit.html" target="_blank" rel="noopener">採用</a></li>
+				</ul>
+		    </div>
+			<div class="ft-nav">
+				<div class="ft-contact"><a href="contact.html" target="_blank" rel="noopener">お問い合わせ</a></div>
+		    </div>
+			<div class="ft-nav2">
+				<ul>
+					<a href="about.html" target="_blank" rel="noopener"><li>サイトのご利用について</li></a>
+					<a href="privacy policy.html" target="_blank" rel="noopener"><li class="border">プライバシーポリシー</li></a>
+				</ul>
+		    </div>
+			<div class="ft-logo">
+				<a href="#"><img src="img/foot_logo_tokukei.png" alt=""></a>
+			</div>
+			<div class="sns">
+				<a href="#" target="_blank" rel="noopener"><img src="img/fb.png" alt="" width="15"></a>
+				<a href="#" target="_blank" rel="noopener"><img src="img/tw2.png" alt="" width="15"></a>
+				<a href="#" target="_blank" rel="noopener"><img src="img/ico_inst.png" alt="" width="16"></a>
+				<a href="#" target="_blank" rel="noopener"><img src="img/line.png" alt="" width="16"></a>
+				<!-- <a href=""><img src="img/mail3.png" alt="" width="20"></a> -->
+			</div>
+			<!-- ページトップ-st -->
+			<div id="page_top"><a href="#"></a></div>
+			<!-- ページトップ-end -->
+		</div>
+		<div class="Copyright">
+			<small>Copyright c Tokukei. All Rights Reserved.</small>
+	    </div>
+	</footer>
+	<!-- footer-end -->
+</body>
+</html>
